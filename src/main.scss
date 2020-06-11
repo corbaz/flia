@@ -1,0 +1,147 @@
+// el archivo main.sass, situado en la raíz del proyecto, importará todos los archivos situados dentro de cada carpeta sin contener código sass adicional
+
+@import 'sass/utilities/variables';
+@import 'sass/utilities/functions';
+@import 'sass/utilities/mixins';
+
+@import 'sass/vendors/bootstrap';
+@import 'sass/vendors/jquery-ui';
+
+@import 'sass/base/reset';
+@import 'sass/base/typografias';
+
+@import 'sass/layout/navigation';
+@import 'sass/layout/grid';
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/forms';
+
+@import 'sass/components/buttons';
+@import 'sass/components/jumbo';
+
+@import 'sass/views/home';
+@import 'sass/views/contact';
+
+@import 'sass/themes/theme';
+@import 'sass/themes/admin';
+@import 'sass/themes/ionic';
+
+$c2: black;
+$c1: white;
+
+body {
+	background-color: $c1;
+	color: $c2;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#02af00+0,bc03bc+29,0310a0+55,af1703+76,fff605+93 */
+
+	background: #02af00; /* Old browsers */
+	background: -moz-linear-gradient(
+		-45deg,
+		#02af00 0%,
+		#bc03bc 29%,
+		#0310a0 55%,
+		#af1703 76%,
+		#fff605 93%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		-45deg,
+		#02af00 0%,
+		#bc03bc 29%,
+		#0310a0 55%,
+		#af1703 76%,
+		#fff605 93%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		135deg,
+		#02af00 0%,
+		#bc03bc 29%,
+		#0310a0 55%,
+		#af1703 76%,
+		#fff605 93%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02af00', endColorstr='#fff605',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+fieldset {
+	display: block;
+	margin-inline-start: 2px;
+	margin-inline-end: 2px;
+	padding-block-start: 0.35em;
+	padding-inline-start: 0.75em;
+	padding-inline-end: 0.75em;
+	padding-block-end: 0.625em;
+	min-inline-size: min-content;
+	border-width: 2px;
+	border-style: groove;
+	border-color: threedface;
+	border-image: initial;
+	// border: 5px solid green;
+	// border-radius: 8px;
+}
+
+legend {
+	// background-color: transparent;
+	// color: red;
+	// padding: 5px 10px;
+	display: block;
+	padding-inline-start: 2px;
+	padding-inline-end: 2px;
+	border-width: initial;
+	border-style: none;
+	border-color: initial;
+	border-image: initial;
+}
+
+h2 {
+	background-color: $c2;
+	color: $c1;
+}
+
+.home {
+	background-image: url('./views/img/home.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+.products {
+	background-image: url('./views/img/products.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+.posts {
+	background-image: url('./views/img/posts.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+._404 {
+	background-image: url('./views/img/_404.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}

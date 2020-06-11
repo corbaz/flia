@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SPA-Ionic</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+		/>
+	</head>
+	<body>
+		<ion-app>
+			<ion-header>
+				<ion-toolbar color='primary'>
+					<ion-buttons slot="start">
+						<ion-button (click)="onClick()">
+							<ion-icon slot="start" name="add"></ion-icon>
+							Click me
+						</ion-button></ion-buttons
+					>
+					<ion-buttons slot="end">
+						<ion-button (click)="onClick()"
+							>Menu
+							<ion-icon slot="end" name="ellipsis-vertical-outline"></ion-icon>
+						</ion-button>
+					</ion-buttons>
+				</ion-toolbar>
+			</ion-header>
+			<ion-content>
+				<ion-row>
+					<ion-col size="12">
+						<ion-card>
+							<ion-card-header color='success'>
+								<ion-card-subtitle >Datos Familiares</ion-></ion-card-subtitle>
+								<ion-card-title>Familia Corbaz</ion-card-title>
+							</ion-card-header>
+							<ion-card-content>
+								<ion-item>
+									<ion-avatar slot="end">
+										<img src="views/img/jcc.jpg" />
+									</ion-avatar>
+									<ion-label>Julio Corbaz</ion-label>
+								</ion-item>
+								<ion-item>
+									<ion-avatar slot="end">
+										<img src="views/img/ale.jpg" />
+									</ion-avatar>
+									<ion-label>Alejandra Guille</ion-label>
+								</ion-item>
+								<ion-item>
+									<ion-avatar slot="end">
+										<img src="views/img/lola.jpg" />
+									</ion-avatar>
+									<ion-label>Lola Corbaz</ion-label>
+								</ion-item>
+								<ion-item>
+									<ion-avatar slot="end">
+										<img src="views/img/chari.jpg" />
+									</ion-avatar>
+									<ion-label>Charo Corbaz</ion-label>
+								</ion-item>
+								<ion-item>
+									<ion-avatar slot="end">
+										<img src="views/img/sancho.jpg" />
+									</ion-avatar>
+									<ion-label>Sancho Corbaz</ion-label>
+								</ion-item>
+							</ion-card-content>
+						</ion-card>
+					</ion-col>
+				</ion-row>
+			</ion-content>
+		</ion-app>
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+		></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
